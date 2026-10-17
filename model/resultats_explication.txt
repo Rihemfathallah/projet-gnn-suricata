@@ -1,0 +1,37 @@
+Fenetre real-http-flood-r3_0006 : verdict predit = attaque (p=1.00), vrai = attaque, type predit = ddos_http_flood, vrai type = ddos_http_flood
+
+[1] Aretes les plus regardees par le GAT (attention moyenne) :
+   0.697  boutique/frontend -> 10.8.2.0/24
+   0.697  boutique/frontend -> 10.8.3.0/24
+   0.679  boutique/frontend -> 10.8.1.0/24
+   0.672  boutique/frontend -> 10.8.6.0/24
+   0.671  boutique/frontend -> 10.8.5.0/24
+   0.671  boutique/frontend -> 10.8.4.0/24
+   0.610  boutique/frontend -> kube-system/coredns
+   0.604  boutique/frontend -> 10.96.0.0/24
+
+[2] GNNExplainer (verdict « attaque ») :
+   Aretes les plus importantes :
+   0.974  boutique/frontend -> boutique/productcatalogservice
+   0.972  boutique/redis-cart -> boutique/cartservice
+   0.953  boutique/currencyservice -> boutique/frontend
+   0.945  boutique/currencyservice -> boutique/frontend
+   0.926  boutique/frontend -> 10.8.3.0/24
+   0.926  kube-system/coredns -> boutique/frontend
+   0.889  10.244.0.0/24 -> boutique/redis-cart
+   0.873  boutique/frontend -> 10.8.2.0/24
+   Features les plus importantes (somme sur les noeuds) :
+   4.34  requetes_s
+   3.89  ratio_syn
+   3.84  present_interne
+   3.81  nb_flux
+   3.09  nb_sources_uniques
+   2.99  type_service
+   2.89  nb_destinations
+   2.73  memoire
+   Noeuds les plus importants :
+   4.67  boutique/frontend
+   3.50  10.96.0.0/24
+   3.28  boutique/cartservice
+   3.16  10.244.0.0/24
+   2.85  kube-system/coredns

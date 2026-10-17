@@ -1,0 +1,37 @@
+[
+  {
+    "incident": "inc-0001",
+    "type": "ddos_http_flood",
+    "confiance": 0.879,
+    "cible": "boutique/frontend",
+    "debut": 6,
+    "fin": 19,
+    "nb_fenetres": 14,
+    "sources": [
+      "10.8.1.0/24",
+      "10.8.2.0/24",
+      "10.8.3.0/24",
+      "10.8.4.0/24",
+      "10.8.5.0/24",
+      "10.8.6.0/24"
+    ],
+    "impactes": [],
+    "run": "real-http-flood-r3",
+    "sondes": null,
+    "explication": "14 fenetres d'attaque entre les fenetres 6 et 19, vers boutique/frontend ; 6 sous-reseau(x) source(s) predit(s) (indicateurs, pas une attribution certaine : les adresses peuvent etre usurpees) ; fenetre la plus sure : real-http-flood-r3_0016 (p=1.00) ; aretes les plus regardees : boutique/frontend -> 10.8.4.0/24, boutique/frontend -> 10.8.1.0/24, boutique/frontend -> 10.8.5.0/24 ; features dominantes (GNNExplainer) : requetes_s, nb_flux, ratio_syn"
+  },
+  {
+    "incident": "inc-0002",
+    "type": "ddos_syn_flood",
+    "confiance": 0.905,
+    "cible": "boutique/frontend",
+    "debut": 6,
+    "fin": 26,
+    "nb_fenetres": 20,
+    "sources": [],
+    "impactes": [],
+    "run": "real-syn-flood",
+    "sondes": null,
+    "explication": "20 fenetres d'attaque entre les fenetres 6 et 26, vers boutique/frontend ; sources non determinees ; fenetre la plus sure : real-syn-flood_0023 (p=0.97) ; aretes les plus regardees : boutique/frontend -> boutique/adservice, boutique/cartservice -> boutique/redis-cart, boutique/checkoutservice -> boutique/emailservice ; features dominantes (GNNExplainer) : nb_sources_uniques, ratio_syn, nb_flux"
+  }
+]

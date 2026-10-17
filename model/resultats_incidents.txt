@@ -1,0 +1,26 @@
+=== Incidents predits (test) ===
+
+[real-healthy] 31 fenetres
+  aucun incident
+
+[real-http-flood-r3] 23 fenetres
+  inc-0001 ddos_http_flood  cible=boutique/frontend fenetres 6-19 (14) confiance=0.879 sources=['10.8.1.0/24', '10.8.2.0/24', '10.8.3.0/24', '10.8.4.0/24', '10.8.5.0/24', '10.8.6.0/24'] impactes=[]
+  (reel : ddos_http_flood cible=boutique/frontend fenetres 4-17)
+
+[real-peak] 31 fenetres
+  aucun incident
+
+[real-syn-flood] 32 fenetres
+  inc-0001 ddos_syn_flood   cible=boutique/frontend fenetres 6-26 (20) confiance=0.905 sources=[] impactes=[]
+  (reel : ddos_syn_flood cible=boutique/frontend fenetres 6-23)
+
+=== Evaluation des incidents ===
+  incidents_predits      2
+  incidents_reels        2
+  fragmentation          1.0
+  precision              1.0
+  rappel                 1.0
+  type_correct           2/2
+  cible_correcte         2/2
+  compression            17.0
+  retard_moyen_fenetres  1.0
