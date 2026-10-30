@@ -114,7 +114,6 @@ Specific metrics: compression ratio, incident purity, incident precision/recall,
 
 ## Getting started
 
-> Adjust to the real repo layout and commands.
 
 ```bash
 git clone https://github.com/Rihemfathallah/projet-gnn-suricata.git
@@ -134,7 +133,6 @@ streamlit run 1_infrastructure/demo/app.py   # demo
 
 ## My contributions
 
-> Be specific. Recruiters read this first.
 
 - Built the isolated lab (kind, Cilium/Hubble, default-deny policy, Online Boutique, Prometheus/Grafana)
 - Wrote the SYN flood, HTTP flood and slow-attack scenarios and the labeled-window export
